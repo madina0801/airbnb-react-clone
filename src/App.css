@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -15,4 +16,26 @@ nav {
 
 .navbar__logo {
   max-width: 100px;
+}
+
+section {
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__photo {
+  max-width: 50%;
+  align-self: center;
+}
+
+.grid__title {
+  margin-bottom: 16px;
+}
+
+.grid__desc {
+  margin-top: 0;
 }
