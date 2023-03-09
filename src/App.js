@@ -6,6 +6,7 @@ import data from './data.js';
 
 function App() {
   const cards = data.map(card => <Card
+    key={card.id}
     coverImg={card.coverImg}
     rating={card.stats.rating}
     reviewCount={card.stats.reviewCount}
@@ -19,7 +20,9 @@ function App() {
     <div>
       <Navbar />
       <Grid />
-      {cards}
+      <section className="card__list">
+        {cards}
+      </section>
     </div>
   );
 }

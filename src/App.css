@@ -51,6 +51,9 @@ section {
 .card {
   width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;        
+  display: flex;         
+  flex-direction: column;
 }
 
 .card__image {
@@ -65,4 +68,29 @@ section {
 
 .card__star {
   height: 14px;
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__stats {
+  display: flex;
+  align-items: center;
+}
+
+.card__price {
+  margin-top: auto;
 }
