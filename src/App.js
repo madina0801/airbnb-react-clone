@@ -13,6 +13,7 @@ function App() {
     location={card.location}
     title={card.title}
     price={card.price}
+    openSpots={card.openSpots}
   />);
   console.log(cards)
 
