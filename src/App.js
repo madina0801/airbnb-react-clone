@@ -5,17 +5,10 @@ import Card from './components/Card.js';
 import data from './data.js';
 
 function App() {
-  const cards = data.map(card => <Card
-    key={card.id}
-    coverImg={card.coverImg}
-    rating={card.stats.rating}
-    reviewCount={card.stats.reviewCount}
-    location={card.location}
-    title={card.title}
-    price={card.price}
-    openSpots={card.openSpots}
+  const cards = data.map(item => <Card
+    key={item.id}
+    item={item}
   />);
-  console.log(cards)
 
   return (
     <div>
